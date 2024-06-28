@@ -4,15 +4,15 @@
 <?php 
 echo "<pre>";
 
-  $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
-  $nomes = file_get_contents('nomes.txt');
+  $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS); echo "<br>";
+  $nomes = file_get_contents('nomes.txt');                                 echo "<br>";
   
-  if($nome){
-  $nomes .= "<li>".$nome."</li>";
-  file_put_contents('nomes.txt', $nomes);
-  echo $nomes;
-  } else {
-      echo $nomes;
+  if($nome){                                                               echo "<br>";
+  $nomes .= "<li>".$nome."</li>";                                          echo "<br>";
+  file_put_contents('nomes.txt', $nomes);                                  echo "<br>";
+  echo $nomes;                                                             echo "<br>";
+  } else {                                                                 echo "<br>";
+      echo $nomes;                                                         echo "<br>";
   }
 
 echo "</pre>";
