@@ -15,5 +15,5 @@ echo "<pre>";
       echo $nomes;
   }
 
-
+echo "</pre>";
 ?>
