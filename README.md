@@ -2,6 +2,8 @@
  uma forma do usuario inserir Nomes/Textos na tela PHP
 
 <?php 
+echo "<pre>";
+
   $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
   $nomes = file_get_contents('nomes.txt');
   
@@ -12,5 +14,6 @@
   } else {
       echo $nomes;
   }
+
 
 ?>
